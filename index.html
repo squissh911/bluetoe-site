@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluetoe — Software, Apps, Digitales</title>
+    <style>
+        :root {
+            --blue: #2563eb;
+            --dark: #0f172a;
+            --gray: #64748b;
+            --light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background: var(--dark); color: white; padding: 4rem 2rem; text-align: center; }
+        header h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.02em; }
+        header h1 span { color: var(--blue); }
+        header p { font-size: 1.2rem; color: #94a3b8; margin-top: 1rem; max-width: 600px; margin-inline: auto; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        section { padding: 3rem 0; }
+        h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .card p { color: var(--gray); font-size: 0.95rem; }
+        .status { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+        .status.soon { background: #dbeafe; color: #1e40af; }
+        .status.live { background: #dcfce7; color: #166534; }
+        footer { text-align: center; padding: 2rem; color: var(--gray); font-size: 0.9rem; border-top: 1px solid #e2e8f0; margin-top: 3rem; }
+        .contact { margin-top: 2rem; }
+        .contact a { color: var(--blue); text-decoration: none; }
+        .contact a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bluetoe<span>.</span></h1>
+        <p>Software, Apps & digitale Produkte — aus Hamburg</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Was wir machen</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="status soon">In Planung</span>
+                    <h3>Software</h3>
+                    <p>Massgeschneiderte Software-Lösungen für Gastronomie, E-Commerce und digitale Geschäftsmodelle.</p>
+                </div>
+                <div class="card">
+                    <span class="status soon">In Planung</span>
+                    <h3>Apps</h3>
+                    <p>Mobile Anwendungen für iOS und Android — von der Idee bis zur Veröffentlichung.</p>
+                </div>
+                <div class="card">
+                    <span class="status soon">In Planung</span>
+                    <h3>E-Commerce</h3>
+                    <p>Digitale Shops, Markenaufbau und automatisierte Verkaufsprozesse.</p>
+                </div>
+                <div class="card">
+                    <span class="status soon">In Planung</span>
+                    <h3>Digitale Produkte</h3>
+                    <p>Von SaaS über APIs bis zu digitalen Inhalten — skalierbar und automatisiert.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hintergrund</h2>
+            <p>Bluetoe ist eine operative Gesellschaft der <strong>Nordivo Holding</strong> und vereint Softwareentwicklung, App-Entwicklung, E-Commerce und digitale Produkte unter einem Dach.</p>
+            <p style="margin-top: 0.5rem;">Mehr folgt bald.</p>
+        </section>
+
+        <section class="contact">
+            <p>Kontakt: <a href="mailto:info@bluetoe.de">info@bluetoe.de</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bluetoe GmbH &middot; Hamburg</p>
+    </footer>
+</body>
+</html>
