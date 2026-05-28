@@ -1,84 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bluetoe — Software, Apps, Digitales</title>
-    <style>
-        :root {
-            --blue: #2563eb;
-            --dark: #0f172a;
-            --gray: #64748b;
-            --light: #f8fafc;
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--light); color: var(--dark); line-height: 1.6; }
-        header { background: var(--dark); color: white; padding: 4rem 2rem; text-align: center; }
-        header h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.02em; }
-        header h1 span { color: var(--blue); }
-        header p { font-size: 1.2rem; color: #94a3b8; margin-top: 1rem; max-width: 600px; margin-inline: auto; }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
-        section { padding: 3rem 0; }
-        h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-        .card { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
-        .card p { color: var(--gray); font-size: 0.95rem; }
-        .status { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
-        .status.soon { background: #dbeafe; color: #1e40af; }
-        .status.live { background: #dcfce7; color: #166534; }
-        footer { text-align: center; padding: 2rem; color: var(--gray); font-size: 0.9rem; border-top: 1px solid #e2e8f0; margin-top: 3rem; }
-        .contact { margin-top: 2rem; }
-        .contact a { color: var(--blue); text-decoration: none; }
-        .contact a:hover { text-decoration: underline; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Bluetoe<span>.</span></h1>
-        <p>Software, Apps & digitale Produkte — aus Hamburg</p>
-    </header>
-
-    <div class="container">
-        <section>
-            <h2>Was wir machen</h2>
-            <div class="grid">
-                <div class="card">
-                    <span class="status soon">In Planung</span>
-                    <h3>Software</h3>
-                    <p>Massgeschneiderte Software-Lösungen für Gastronomie, E-Commerce und digitale Geschäftsmodelle.</p>
-                </div>
-                <div class="card">
-                    <span class="status soon">In Planung</span>
-                    <h3>Apps</h3>
-                    <p>Mobile Anwendungen für iOS und Android — von der Idee bis zur Veröffentlichung.</p>
-                </div>
-                <div class="card">
-                    <span class="status soon">In Planung</span>
-                    <h3>E-Commerce</h3>
-                    <p>Digitale Shops, Markenaufbau und automatisierte Verkaufsprozesse.</p>
-                </div>
-                <div class="card">
-                    <span class="status soon">In Planung</span>
-                    <h3>Digitale Produkte</h3>
-                    <p>Von SaaS über APIs bis zu digitalen Inhalten — skalierbar und automatisiert.</p>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BlueToe ist ein App-Development-Studio aus Hamburg für mobile Apps, Web-Apps und digitale Produktlösungen."
+    />
+    <title>BlueToe — App-Entwicklung aus Hamburg</title>
+    <link rel="icon" href="assets/bluetoe-new-icon-transparent.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="site-header" data-header>
+        <a class="logo" href="#top" aria-label="BlueToe Home">
+          <img src="assets/bluetoe-new-lockup-transparent.png" alt="BlueToe" />
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <div class="nav-item">
+            <a href="#services" data-i18n="nav.services">Leistungen</a>
+            <div class="submenu">
+              <a href="#mobile-apps">Mobile Apps</a>
+              <a href="#web-apps">Web Apps</a>
+              <a href="#backend" data-i18n="services.backend.title">Backend Systeme</a>
+              <a href="#integrations" data-i18n="services.integrations.title">Integrationen</a>
             </div>
-        </section>
+          </div>
+          <div class="nav-item">
+            <a href="#process" data-i18n="nav.process">Prozess</a>
+            <div class="submenu">
+              <a href="#process" data-i18n="process.discover.title">Verstehen</a>
+              <a href="#process" data-i18n="process.define.title">Strukturieren</a>
+              <a href="#process">Design</a>
+              <a href="#process" data-i18n="process.develop.title">Entwickeln</a>
+              <a href="#process">Launch</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#packages" data-i18n="nav.packages">Pakete</a>
+            <div class="submenu">
+              <a href="#concept-sprint">Concept Sprint</a>
+              <a href="#design-prototype">Design Prototyp</a>
+              <a href="#app-build">App Build</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#technology" data-i18n="nav.technology">Technologie</a>
+            <div class="submenu">
+              <a href="#technology">Mobile</a>
+              <a href="#technology">Frontend</a>
+              <a href="#technology">Backend</a>
+              <a href="#technology">Cloud</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#projects" data-i18n="nav.projects">Projekte</a>
+            <div class="submenu">
+              <a href="#projects">Startup MVPs</a>
+              <a href="#projects" data-i18n="project.enterprise.title">Unternehmens-Apps</a>
+              <a href="#projects" data-i18n="project.consumer.title">Consumer Apps</a>
+              <a href="#projects" data-i18n="project.modernization.title">Modernisierung</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+            <div class="submenu">
+              <a href="#contact" data-i18n="contact.form.title">Projektformular</a>
+              <a href="#faq">FAQ</a>
+              <a href="#packages" data-i18n="nav.packages">Pakete</a>
+              <a href="#models" data-i18n="models.title">Zusammenarbeit</a>
+            </div>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <div class="language-toggle" aria-label="Sprache wechseln">
+            <button type="button" class="is-active" data-lang-switch="de">DE</button>
+            <button type="button" data-lang-switch="en">EN</button>
+          </div>
+          <a class="comic-button header-cta" href="#contact" data-i18n="cta.start">Projekt starten</a>
+        </div>
+        <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+          <div class="mobile-language-toggle" aria-label="Sprache wechseln">
+            <button type="button" class="is-active" data-lang-switch="de">DE</button>
+            <button type="button" data-lang-switch="en">EN</button>
+          </div>
+          <a href="#services" data-i18n="nav.services">Leistungen</a>
+          <a href="#process" data-i18n="nav.process">Prozess</a>
+          <a href="#packages" data-i18n="nav.packages">Pakete</a>
+          <a href="#technology" data-i18n="nav.technology">Technologie</a>
+          <a href="#projects" data-i18n="nav.projects">Projekte</a>
+          <a href="#models" data-i18n="models.title">Zusammenarbeit</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+      </header>
 
-        <section>
-            <h2>Hintergrund</h2>
-            <p>Bluetoe ist eine operative Gesellschaft der <strong>Nordivo Holding</strong> und vereint Softwareentwicklung, App-Entwicklung, E-Commerce und digitale Produkte unter einem Dach.</p>
-            <p style="margin-top: 0.5rem;">Mehr folgt bald.</p>
-        </section>
+      <section class="hero" id="top">
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="hero-left">
+          <h1 data-i18n-html="hero.title">Apps, die sich<br /><span>besonders anfühlen.</span></h1>
+          <p class="hero-copy" data-i18n="hero.copy">
+            BlueToe ist ein Premium-Studio für App-Entwicklung aus Hamburg. Wir entwickeln intuitive,
+            leistungsstarke Apps und Web-Apps für Unternehmen, Gründer und Marken.
+          </p>
+          <a class="comic-button hero-button" href="#contact" data-i18n="cta.start">Projekt starten</a>
+        </div>
 
-        <section class="contact">
-            <p>Kontakt: <a href="mailto:info@bluetoe.de">info@bluetoe.de</a></p>
-        </section>
-    </div>
+        <div class="hero-visual burst">
+          <div class="phone">
+            <div class="phone-top">9:41</div>
+            <h3 data-i18n-html="phone.greeting">Guten Morgen,<br />Alex!</h3>
+            <div class="balance-card">
+              <span data-i18n="phone.metric">Projektbudget</span>
+              <strong>$8,750.00 <em>+12.5%</em></strong>
+              <div class="line-chart"></div>
+            </div>
+            <p class="quick-title" data-i18n="phone.actions">Schnellzugriff</p>
+            <div class="quick-grid">
+              <span data-i18n="phone.action1">Plan</span>
+              <span data-i18n="phone.action2">Design</span>
+              <span>Analytics</span>
+              <span data-i18n="phone.action4">Mehr</span>
+            </div>
+            <div class="activity-list">
+              <b data-i18n="phone.activity">Projektstatus</b>
+              <p><span data-i18n="phone.item1">UX-Konzept</span><em data-i18n="phone.done">Fertig</em></p>
+              <p><span data-i18n="phone.item2">API Setup</span><em>Live</em></p>
+              <p><span data-i18n="phone.item3">Launch Check</span><em data-i18n="phone.ready">Bereit</em></p>
+            </div>
+          </div>
+          <div class="speech-card hero-card-1"><b>iOS Build</b><span>16.4.1</span></div>
+          <div class="speech-card hero-card-2"><b data-i18n="hero.status">Build Status</b><span data-i18n="hero.success">Erfolgreich</span></div>
+          <div class="speech-card hero-card-3"><b>App Store Ready</b><span data-i18n="hero.verified">Verifiziert</span></div>
+        </div>
+      </section>
 
-    <footer>
-        <p>&copy; 2026 Bluetoe GmbH &middot; Hamburg</p>
-    </footer>
-</body>
+      <section class="agency-band">
+        <div class="agency-title">
+          <h2 data-i18n-html="agency.title">Nicht noch eine<br />App-Agentur.</h2>
+          <span class="big-star">★</span>
+        </div>
+        <p data-i18n="agency.copy">Wir sind Produktpartner. Wir denken tief mit, hinterfragen Ideen und entwickeln digitale Produkte, die echte Probleme lösen und wachsen können.</p>
+        <div class="agency-points">
+          <div><span>♙</span><b data-i18n-html="agency.point1">Strategische<br />Partnerschaft</b></div>
+          <div><span>♡</span><b data-i18n-html="agency.point2">Nutzerzentriertes<br />Design</b></div>
+          <div><span>ϟ</span><b data-i18n-html="agency.point3">Agile<br />Umsetzung</b></div>
+          <div><span>↗</span><b data-i18n-html="agency.point4">Skalierbare<br />Lösungen</b></div>
+        </div>
+      </section>
+
+      <section class="build-process" id="services">
+        <div class="build-panel">
+          <div class="section-title yellow-label" data-i18n="services.title">Was wir bauen</div>
+          <div class="build-icons">
+            <article id="mobile-apps">
+              <div class="square-icon service-icon phone-icon" aria-hidden="true">
+                <svg viewBox="0 0 96 96" role="img">
+                  <rect x="26" y="8" width="44" height="80" rx="10"></rect>
+                  <path d="M41 17h14M43 78h10"></path>
+                  <rect x="33" y="24" width="30" height="45" rx="3"></rect>
+                </svg>
+              </div>
+              <h3>Mobile Apps</h3>
+              <p data-i18n="services.mobile.copy">iOS- und Android-Apps, entwickelt für Performance, klare Nutzung und Freude im Alltag.</p>
+            </article>
+            <article id="web-apps">
+              <div class="square-icon service-icon web-icon" aria-hidden="true">
+                <svg viewBox="0 0 96 96" role="img">
+                  <rect x="12" y="18" width="72" height="58" rx="6"></rect>
+                  <path d="M12 34h72M26 26h1M36 26h1M46 26h1"></path>
+                  <rect x="23" y="46" width="22" height="17" rx="2"></rect>
+                  <path d="M54 48h18M54 58h13"></path>
+                </svg>
+              </div>
+              <h3>Web Apps</h3>
+              <p data-i18n="services.web.copy">Leistungsstarke, responsive Web-Apps für Kunden, Teams und digitale Geschäftsmodelle.</p>
+            </article>
+            <article id="backend">
+              <div class="square-icon service-icon backend-icon" aria-hidden="true">
+                <svg viewBox="0 0 96 96" role="img">
+                  <rect x="18" y="18" width="60" height="16" rx="4"></rect>
+                  <rect x="18" y="40" width="60" height="16" rx="4"></rect>
+                  <rect x="18" y="62" width="60" height="16" rx="4"></rect>
+                  <path d="M29 26h1M29 48h1M29 70h1M44 26h22M44 48h22M44 70h22"></path>
+                </svg>
+              </div>
+              <h3 data-i18n="services.backend.title">Backend Systeme</h3>
+              <p data-i18n="services.backend.copy">Robuste, sichere und skalierbare Backend-Architekturen für echte Produktlogik.</p>
+            </article>
+            <article id="integrations">
+              <div class="square-icon service-icon integration-icon" aria-hidden="true">
+                <svg viewBox="0 0 96 96" role="img">
+                  <path d="M31 38h-7a14 14 0 0 0 0 28h14"></path>
+                  <path d="M58 66h14a14 14 0 0 0 0-28h-7"></path>
+                  <path d="M36 52h24"></path>
+                  <path d="M48 23v50M33 38l15-15 15 15M33 58l15 15 15-15"></path>
+                </svg>
+              </div>
+              <h3 data-i18n="services.integrations.title">Integrationen</h3>
+              <p data-i18n="services.integrations.copy">Saubere Anbindung von APIs, Zahlungsdiensten, Datenbanken und externen Tools.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="process-panel" id="process">
+          <div class="section-title yellow-label" data-i18n="process.title">Unser Prozess</div>
+          <span class="corner-star">☆</span>
+          <div class="process-line">
+            <article><strong>1</strong><div class="process-icon">⌕</div><h3 data-i18n="process.discover.title">Verstehen</h3><p data-i18n="process.discover.copy">Wir klären Ziele, Nutzer, Anforderungen und Herausforderungen.</p></article>
+            <article><strong>2</strong><div class="process-icon">◎</div><h3 data-i18n="process.define.title">Strukturieren</h3><p data-i18n="process.define.copy">Wir formen Strategie, MVP-Umfang und Produktlogik.</p></article>
+            <article><strong>3</strong><div class="process-icon">✎</div><h3>Design</h3><p data-i18n="process.design.copy">Wir gestalten intuitive Interfaces, die sofort verständlich sind.</p></article>
+            <article><strong>4</strong><div class="process-icon">&lt;/&gt;</div><h3 data-i18n="process.develop.title">Entwickeln</h3><p data-i18n="process.develop.copy">Wir bauen sauberen, skalierbaren und zuverlässigen Code.</p></article>
+            <article><strong>5</strong><div class="process-icon">↟</div><h3>Launch</h3><p data-i18n="process.launch.copy">Wir veröffentlichen, begleiten und helfen bei der Weiterentwicklung.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="three-panels">
+        <div class="tech-panel" id="technology">
+          <div class="section-title blue-label" data-i18n="tech.title">Technologie</div>
+          <div class="tech-columns">
+            <article><h3>Mobile</h3><div class="tech-icons"><img src="assets/tech/swift.svg" alt="Swift" /><img src="assets/tech/kotlin.svg" alt="Kotlin" /></div></article>
+            <article><h3>Frontend</h3><div class="tech-icons"><img src="assets/tech/react.svg" alt="React" /><img src="assets/tech/typescript.svg" alt="TypeScript" /></div></article>
+            <article><h3>Backend</h3><div class="tech-icons"><img src="assets/tech/nodejs.svg" alt="Node.js" /><img src="assets/tech/supabase.svg" alt="Supabase" /></div></article>
+            <article><h3>Cloud</h3><div class="tech-icons"><img src="assets/tech/aws.svg" alt="AWS" /><img src="assets/tech/firebase.svg" alt="Firebase" /></div></article>
+          </div>
+          <p data-i18n-html="tech.copy">Moderne Tools. Bewährte Frameworks.<br /><b>Gebaut für Geschwindigkeit, Qualität und Skalierung.</b></p>
+        </div>
+
+        <div class="project-panel" id="projects">
+          <div class="section-title red-label" data-i18n="project.title">Projektarten</div>
+          <ul class="feature-list">
+            <li><span>↗</span><b>Startup MVPs</b><p data-i18n="project.mvp.copy">Ideen validieren und den Launch beschleunigen.</p></li>
+            <li><span>▥</span><b data-i18n="project.enterprise.title">Unternehmens-Apps</b><p data-i18n="project.enterprise.copy">Abläufe vereinfachen und Teams produktiver machen.</p></li>
+            <li><span>♟</span><b data-i18n="project.consumer.title">Consumer Apps</b><p data-i18n="project.consumer.copy">Nutzer begeistern und Marken digital erweitern.</p></li>
+            <li><span>⟳</span><b data-i18n="project.modernization.title">Modernisierung</b><p data-i18n="project.modernization.copy">Bestehende Produkte verbessern, migrieren und zukunftsfähig machen.</p></li>
+          </ul>
+        </div>
+
+        <div class="model-panel" id="models">
+          <div class="section-title blue-label" data-i18n="models.title">Zusammenarbeit</div>
+          <ul class="feature-list">
+            <li><span>●</span><b>Festpreis</b><p data-i18n="models.fixed.copy">Klarer Umfang, Zeitplan und definierte Ergebnisse.</p></li>
+            <li><span>◷</span><b>Time & Materials</b><p data-i18n="models.tm.copy">Flexibel und anpassbar bei wachsendem Bedarf.</p></li>
+            <li><span>♟</span><b data-i18n="models.team.title">Dediziertes Team</b><p data-i18n="models.team.copy">Ihr erweitertes Produktteam, fokussiert auf Ihr Projekt.</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="packages-section" id="packages">
+        <div class="packages-head">
+          <div>
+            <div class="section-title yellow-label" data-i18n="packages.title">Pakete</div>
+            <h2 data-i18n-html="packages.headline">Der richtige<br />Startpunkt.</h2>
+          </div>
+          <p data-i18n="packages.copy">
+            Ob erste Idee, klickbarer Prototyp oder vollständige App-Entwicklung — BlueToe bietet
+            klare Projektmodelle für unterschiedliche Phasen digitaler Produktentwicklung.
+          </p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card package-blue" id="concept-sprint">
+            <div class="package-kicker" data-i18n="package.concept.kicker">01 / Strategie</div>
+            <h3>Concept Sprint</h3>
+            <p class="package-copy" data-i18n="package.concept.copy">Für frühe App-Ideen, die Struktur, Produktlogik und eine realistische Roadmap brauchen.</p>
+            <div class="price-tag">ab 2.900 € netto</div>
+            <ul>
+              <li data-i18n="package.concept.li1">Produkt- und Zielgruppenanalyse</li>
+              <li data-i18n="package.concept.li2">MVP-Struktur</li>
+              <li data-i18n="package.concept.li3">Feature-Priorisierung</li>
+              <li data-i18n="package.concept.li4">Technische Einschätzung</li>
+              <li data-i18n="package.concept.li5">Budget- und Zeitplanung</li>
+            </ul>
+          </article>
+
+          <article class="package-card package-yellow" id="design-prototype">
+            <div class="package-kicker" data-i18n="package.prototype.kicker">02 / Prototyp</div>
+            <h3 data-i18n="package.prototype.title">Design Prototyp</h3>
+            <p class="package-copy" data-i18n="package.prototype.copy">Für Apps, die vor der Entwicklung sichtbar, testbar und präsentierbar werden sollen.</p>
+            <div class="price-tag">ab 7.500 € netto</div>
+            <ul>
+              <li>User Flows</li>
+              <li>Wireframes</li>
+              <li>UI-Design</li>
+              <li data-i18n="package.prototype.li4">Zentrale App-Screens</li>
+              <li data-i18n="package.prototype.li5">Klickbarer Prototyp</li>
+              <li data-i18n="package.prototype.li6">Design-System-Basis</li>
+            </ul>
+          </article>
+
+          <article class="package-card package-red" id="app-build">
+            <div class="package-kicker">03 / Build</div>
+            <h3>App Build</h3>
+            <p class="package-copy" data-i18n="package.build.copy">Für Kunden, die eine erste professionelle App-Version entwickeln und veröffentlichen möchten.</p>
+            <div class="price-tag">ab 25.000 € netto</div>
+            <ul>
+              <li data-i18n="package.build.li1">App-Entwicklung</li>
+              <li data-i18n="package.build.li2">Backend-Grundstruktur</li>
+              <li>Datenbank</li>
+              <li data-i18n="package.build.li4">Nutzerkonten</li>
+              <li data-i18n="package.build.li5">Kernfunktionen</li>
+              <li data-i18n="package.build.li6">Testing und Launch-Vorbereitung</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="package-more">
+          <div><b>Full App Development</b><span data-i18n="package.more.full">für umfangreiche Produkt- und Plattformprojekte</span></div>
+          <div><b>App Rescue</b><span data-i18n="package.more.rescue">für bestehende Apps, die verbessert oder launchfähig gemacht werden müssen</span></div>
+          <div><b>Product Partnership</b><span data-i18n="package.more.partner">für langfristige Weiterentwicklung nach dem Launch</span></div>
+        </div>
+        <p class="package-note" data-i18n="package.note">Full App Development, App Rescue und langfristige Product Partnerships auf Anfrage.</p>
+      </section>
+
+      <section class="faq-form" id="faq">
+        <div class="faq-panel">
+          <div class="section-title yellow-label">FAQ</div>
+          <h2 data-i18n="faq.headline">Vor dem Projekt.</h2>
+          <details open><summary data-i18n="faq.q1">Nimmt BlueToe Kundenprojekte an?</summary><p data-i18n="faq.a1">Ja. BlueToe entwickelt Apps, Web-Apps und digitale Produktlösungen für Unternehmen, Gründer und Marken.</p></details>
+          <details><summary data-i18n="faq.q2">Können wir mit einer frühen Idee starten?</summary><p data-i18n="faq.a2">Ja. Wir helfen dabei, Umfang, Produktlogik, UX, MVP-Roadmap und technische Machbarkeit vor der Entwicklung zu klären.</p></details>
+          <details><summary data-i18n="faq.q3">Begleitet BlueToe auch den Launch?</summary><p data-i18n="faq.a3">Ja. Wir unterstützen TestFlight, App Store, Google Play, Web-Deployment, Analytics und Übergabe.</p></details>
+        </div>
+        <form class="contact-form mini-form" data-contact-form>
+          <div class="section-title blue-label" data-i18n="contact.form.title">Projektformular</div>
+          <div class="form-grid">
+            <label data-i18n-label="form.name">Name<input name="name" type="text" autocomplete="name" placeholder="Ihr Name" data-i18n-placeholder="form.name.placeholder" required /></label>
+            <label data-i18n-label="form.company">Unternehmen<input name="company" type="text" autocomplete="organization" placeholder="Optional" data-i18n-placeholder="form.company.placeholder" /></label>
+          </div>
+          <label data-i18n-label="form.reply">Antwort an<input name="reply" type="email" autocomplete="email" placeholder="Antwortadresse" data-i18n-placeholder="form.reply.placeholder" required /></label>
+          <div class="form-grid">
+            <label data-i18n-label="form.project">Projektart<select name="project" required><option value="" data-i18n="form.select">Auswählen</option><option>Mobile App</option><option>Web App</option><option>MVP</option><option>UX/UI</option></select></label>
+            <label data-i18n-label="form.timeline">Zeitrahmen<select name="timeline" required><option value="" data-i18n="form.select">Auswählen</option><option>ASAP</option><option data-i18n="form.timeline.1">1-3 Monate</option><option data-i18n="form.timeline.2">3-6 Monate</option><option data-i18n="form.timeline.open">Offen</option></select></label>
+          </div>
+          <label data-i18n-label="form.message">Nachricht<textarea name="message" rows="4" placeholder="Was soll die App leisten?" data-i18n-placeholder="form.message.placeholder" required></textarea></label>
+          <button class="secondary-button form-button" type="submit" data-i18n="form.submit">Anfrage vorbereiten →</button>
+          <p class="form-note" data-form-note data-i18n="form.note">Keine öffentliche E-Mail-Adresse. Ihre Anfrage wird lokal vorbereitet.</p>
+        </form>
+      </section>
+
+      <section class="final-cta" id="contact">
+        <div class="shout-bubble" data-i18n-html="final.title">Bereit für<br />Ihre App?</div>
+        <span class="cta-star">★</span>
+        <div class="cta-copy">
+          <p data-i18n="final.copy">Lassen Sie uns eine App entwickeln, die Ihre Nutzer gern verwenden und die Ihr Geschäft voranbringt.</p>
+          <a class="secondary-button" href="#faq" data-i18n="cta.start.arrow">Projekt starten →</a>
+        </div>
+        <div class="skyline"></div>
+      </section>
+
+      <footer class="site-footer">
+        <img src="assets/bluetoe-new-lockup-transparent.png" alt="BlueToe" />
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#services" data-i18n="nav.services">Leistungen</a>
+          <a href="#process" data-i18n="nav.process">Prozess</a>
+          <a href="#packages" data-i18n="nav.packages">Pakete</a>
+          <a href="#technology" data-i18n="nav.technology">Technologie</a>
+          <a href="#projects" data-i18n="nav.projects">Projekte</a>
+          <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+        <div data-i18n="footer.rights">© 2026 BlueToe. Alle Rechte vorbehalten.</div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

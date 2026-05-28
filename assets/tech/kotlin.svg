@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-label="Kotlin">
+  <defs>
+    <linearGradient id="kotlinGradient" x1="4" x2="92" y1="92" y2="4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0095D5"/>
+      <stop offset=".48" stop-color="#7F52FF"/>
+      <stop offset="1" stop-color="#F88909"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="18" fill="url(#kotlinGradient)"/>
+  <path fill="#fff" d="M18 78V18h60L48 48l30 30H18z" opacity=".96"/>
+</svg>

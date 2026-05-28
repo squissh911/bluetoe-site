@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-label="Supabase">
+  <rect width="96" height="96" rx="18" fill="#0b1f17"/>
+  <path fill="#3ECF8E" d="M52 10 20 54h27l-3 32 32-44H49l3-32z"/>
+  <path fill="#fff" d="M52 10 20 54h27l29-12H49l3-32z" opacity=".18"/>
+</svg>
